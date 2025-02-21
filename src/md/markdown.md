@@ -160,7 +160,9 @@ HTML의 `<h1> <h2> <h3> <h4> <h5> <h6>` 와 동일한 역할을 합니다. HTML�
 
 출력 예시
 
-> ![아기춘식이](https://item.kakaocdn.net/do/ac71c1fd0ef230ab626c93ee2d98934d4022de826f725e10df604bf1b9725cfd) > ![안녕춘식이](https://i.namu.wiki/i/KB9iEgP-2sS4fq7fKiz03iNgN7cXhe8v3qil8DQWBDgu2XcLoL5bCPIdid56AgyXRM94ndMCWBIuskX1-BG3KQ.gif "춘식이가 인사합니다.")
+> ![아기춘식이](https://item.kakaocdn.net/do/ac71c1fd0ef230ab626c93ee2d98934d4022de826f725e10df604bf1b9725cfd)
+>
+> ![안녕춘식이](https://i.namu.wiki/i/KB9iEgP-2sS4fq7fKiz03iNgN7cXhe8v3qil8DQWBDgu2XcLoL5bCPIdid56AgyXRM94ndMCWBIuskX1-BG3KQ.gif "춘식이가 인사합니다.")
 >
 > [![노래춘식이][2]](https://www.google.com)
 >
