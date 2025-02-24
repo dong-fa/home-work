@@ -1,4 +1,4 @@
-@import "/src/common/modern-reset.css";
+@import "./src/avatars/styles/avatars.css";
 
 .avatar-contanier {
   width: 396px;
@@ -13,7 +13,6 @@
 
 .user-avatar {
   position: relative;
-
   width: 64px;
   height: 64px;
   display: inline-block;
