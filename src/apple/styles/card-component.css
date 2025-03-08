@@ -84,9 +84,16 @@
 
 .item-desc-02 {
   color: var(--gray);
-  font-size: var(--base-font-size);
 }
 
-.more-set {
-  display: inline-block;
+.button-group {
+  display: inline-flex;
+  gap: 16px;
+
+  button {
+    background: var(--blue-400);
+    border: 1px solid var(--blue-400);
+    border-radius: 50%;
+    height: 28px;
+  }
 }
