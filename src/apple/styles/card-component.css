@@ -2,60 +2,51 @@
 @import "./theme.css";
 @import "./base.css";
 
-.iPadPro-container {
+.card-container {
   min-block-size: var(--size);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: var(--base-spacing);
+}
+
+.iPadPro {
   background-image: url(../products/ipad_pro.jpeg);
   background-image: -webkit-image-set(url(../products/ipad_pro.jpeg) 1x, url(../products/ipad_pro_2x.jpeg) 2x);
-  background-size: cover;
-  background-position: center;
 }
 
-.iPadAir-container {
-  min-block-size: var(--size);
+.iPadAir {
   background-image: url(../products/ipad_air.jpeg);
   background-image: -webkit-image-set(url(../products/ipad_air.jpeg) 1x, url(../products/ipad_air_2x.jpeg) 2x);
-  background-size: cover;
-  background-position: center;
 }
 
-.iPhone15Pro-container {
-  min-block-size: var(--size);
+.iPhone15Pro {
   background-image: url(../products/iphone15_pro.jpeg);
   background-image: -webkit-image-set(url(../products/iphone15_pro.jpeg) 1x, url(../products/iphone15_pro_2x.jpeg) 2x);
-  background-size: cover;
-  background-position: center;
+
+  @media (min-width: 1024px) {
+    background-image: url(../products/iphone15_pro_wide.jpeg);
+    background-image: -webkit-image-set(url(../products/iphone15_pro_wide.jpeg) 1x, url(../products/iphone15_pro_wide_2x.jpeg) 2x);
+  }
 }
 
-.iPhone15-container {
-  min-block-size: var(--size);
+.iPhone15 {
   background-image: url(../products/iphone15.jpeg);
   background-image: -webkit-image-set(url(../products/iphone15.jpeg) 1x, url(../products/iphone15_2x.jpeg) 2x);
-  background-size: cover;
-  background-position: center;
 }
 
-.watch-container {
-  min-block-size: var(--size);
+.appleWatch {
   background-image: url(../products/apple_watch.jpeg);
   background-image: -webkit-image-set(url(../products/apple_watch.jpeg) 1x, url(../products/apple_watch_2x.jpeg) 2x);
-  background-size: cover;
-  background-position: center;
 }
 
-.MacBookAir-container {
-  min-block-size: var(--size);
+.macbookAir {
   background-image: url(../products/macbook_air.jpeg);
   background-image: -webkit-image-set(url(../products/macbook_air.jpeg) 1x, url(../products/macbook_air_2x.jpeg) 2x);
-  background-size: cover;
-  background-position: center;
 }
 
-.airPodsPro-container {
-  min-block-size: var(--size);
+.airPodsPro {
   background-image: url(../products/airpods_pro.jpeg);
   background-image: -webkit-image-set(url(../products/airpods_pro.jpeg) 1x, url(../products/airpods_pro_2x.jpeg) 2x);
-  background-size: cover;
-  background-position: center;
 }
 
 .item-box {
@@ -64,36 +55,78 @@
   justify-content: flex-start;
   align-items: center;
   background: transparent;
-  padding-top: 40px;
+  padding-top: var(--large-spacing);
   color: var(--white);
   gap: var(--small-spacing);
+
+  @media (min-width: 1024px) {
+    padding-top: var(--extra-large-spacing);
+  }
+}
+
+.item-box.black {
+  color: var(--black);
 }
 
 .item-title {
   font-size: var(--large-text);
   font-weight: 900;
+
+  @media (min-width: 1024px) {
+    font-size: var(--extra-large-text);
+  }
 }
 
 .item-desc-01 {
-  font-size: var(--base-font-size);
+  font-size: var(--base-text);
   font-weight: 700;
   display: grid;
   justify-items: center;
-  gap: 8px;
+  line-height: var(--line-normal);
+  /* gap: 8px; */
+
+  @media (min-width: 1024px) {
+    font-size: var(--medium-text);
+  }
 }
 
 .item-desc-02 {
+  font-size: var(--small-text);
   color: var(--gray);
 }
 
 .button-group {
   display: inline-flex;
-  gap: 16px;
+  gap: var(--base-spacing);
+  button {
+    border-radius: 50px;
+    padding: var(--x-small-spacing) var(--small-spacing);
+    font-size: var(--xx-small-text);
+  }
+}
 
+.blue-btn {
   button {
     background: var(--blue-400);
     border: 1px solid var(--blue-400);
-    border-radius: 50%;
-    height: 28px;
+    color: inherit;
+
+    &:last-child {
+      background: transparent;
+      color: var(--blue-400);
+    }
+  }
+}
+
+.black-btn {
+  button {
+    background: var(--black);
+    border: 1px solid var(--black);
+    color: var(--white);
+
+    &:last-child {
+      background: transparent;
+      color: var(--black);
+    }
   }
 }

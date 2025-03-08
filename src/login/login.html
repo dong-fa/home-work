@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/login.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 실제 구현 영역 -->
+    <div class="login-container">
+      <div class="naver-logo">
+        <img src="../assets/svg/naverLogo.svg" alt="naver-logo" width="230px" />
+      </div>
+      <form class="login-form-box" action="/" method="post">
+        <label class="inputId">
+          <input type="email" id="userId" name="userId" required placeholder="아이디" />
+        </label>
+        <label class="inputPw">
+          <input type="password" id="userPassword" name="userPassword" minlength="10" required placeholder="비밀번호" />
+        </label>
+        <button class="submit-btn" type="submit">로그인</button>
+      </form>
+      <div class="checkbox-container">
+        <img src="../assets/svg/unCheckBox.svg" alt="로그인 유지 안함" class="unchecked-img" />
+        <img src="../assets/svg/checkBox.svg" alt="로그인 유지" class="checked-img" />
+        <input type="checkbox" id="toggle-check" />
+        <label for="toggle-check" class="toggle-label">로그인 상태유지</label>
+      </div>
+    </div>
+  </body>
+</html>
